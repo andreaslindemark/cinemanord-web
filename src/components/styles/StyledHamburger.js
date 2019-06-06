@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledHamburger = styled.div`
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 25px;
   right: 30px;
   top: 25px;

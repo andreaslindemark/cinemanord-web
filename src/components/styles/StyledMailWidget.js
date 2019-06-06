@@ -10,7 +10,7 @@ export const StyledMailWidget = styled.div`
   transform: translateY(480px);
 
   @media (max-width: 425px) {
-    transform: translateY(300px);
+    transform: translateY(330px);
   }
 
   @media (max-width: 768px) {
@@ -120,7 +120,7 @@ export const CnInput = styled.input`
   }
 
   @media (max-width: 425px) {
-    height: 20px;
+    height: 25px;
     margin-bottom: 0px !important;
     font-size: 0.8rem;
   }
