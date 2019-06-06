@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledHamburger = styled.div`
-  position: absolute;
-  right: 40px;
-  top: 31px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 25px;
+  right: 30px;
+  top: 25px;
   z-index: 200;
   cursor: pointer;
   transition: all 0.3s;
@@ -19,9 +22,9 @@ export const StyledHamburger = styled.div`
   .bar1,
   .bar2,
   .bar3 {
-    width: 40px;
+    width: 30px;
     height: 5px;
-    margin: 7px 0;
+    margin: 5px 0;
     border-radius: 20px;
     transition: 0.4s;
     background: #307853; /* Old browsers */

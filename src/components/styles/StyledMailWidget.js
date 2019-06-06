@@ -9,6 +9,10 @@ export const StyledMailWidget = styled.div`
   transition: all 0.3s ease;
   transform: translateY(480px);
 
+  @media (max-width: 425px) {
+    transform: translateY(300px);
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     margin: 0;
@@ -49,7 +53,7 @@ export const StyledMailWidget = styled.div`
   }
 
   &.visible {
-    transform: translateY(0px);
+    transform: translateY(20px);
   }
 
   .mailWidgetImg {
@@ -87,6 +91,11 @@ export const StyledMailWidget = styled.div`
     border-radius: 20px;
     padding: 20px;
 
+    @media (max-width: 425px) {
+      height: 300px;
+      top: 30px;
+    }
+
     p {
       color: #fff;
     }
@@ -109,6 +118,12 @@ export const CnInput = styled.input`
   ::placeholder {
     color: grey;
   }
+
+  @media (max-width: 425px) {
+    height: 20px;
+    margin-bottom: 0px !important;
+    font-size: 0.8rem;
+  }
 `;
 
 export const CnTextArea = styled.textarea`
@@ -125,6 +140,11 @@ export const CnTextArea = styled.textarea`
 
   ::placeholder {
     color: grey;
+  }
+
+  @media (max-width: 425px) {
+    height: 50px;
+    font-size: 0.8rem;
   }
 `;
 

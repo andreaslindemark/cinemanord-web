@@ -39,8 +39,8 @@ export const MovieImageTextWrapper = styled.div`
   position: absolute;
   color: #fff;
   top: 0px;
-  width: calc(100% - 30px);
-  height: calc(100% - 20px);
+  width: 100%;
+  height: 100%;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -50,6 +50,7 @@ export const MovieImageTextWrapper = styled.div`
   .pWrapper {
     background: rgb(0, 0, 0, 0.5);
     padding: 10px 20px;
+    margin: 0 20px;
     border-radius: 20px;
   }
 `;
@@ -64,15 +65,20 @@ export const MovieImageText = styled.p`
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-weight: 400;
 
+  @media (max-width: 425px) {
+    font-size: 0.8rem !important;
+    line-height: 20px !important;
+  }
+
   @media (min-width: 768px) {
     font-size: 1rem;
   }
 
   @media (min-width: 992px) {
-    font-size: 1.3rem;
+    font-size: 1rem !important;
   }
 
   @media (min-width: 1200px) {
-    font-size: 1.5rem;
+    font-size: 1.1rem !important;
   }
 `;

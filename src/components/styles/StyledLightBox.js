@@ -14,6 +14,10 @@ export const StyledLightBox = styled.div`
   justify-content: center;
   flex-direction: column;
 
+  @media (max-width: 1024px) {
+    justify-content: start;
+  }
+
   .text-wrapper {
     width: 80vw;
     background: #000;
@@ -23,6 +27,18 @@ export const StyledLightBox = styled.div`
     em,
     strong {
       color: #fff;
+    }
+
+    @media (max-width: 425px) {
+      width: 100vw;
+      height: calc(50vw / 16 * 9);
+
+      p,
+      em,
+      strong {
+        font-size: 0.8rem;
+        line-height: 16px;
+      }
     }
 
     @media (min-width: 992px) {
@@ -64,6 +80,10 @@ export const StyledLightBox = styled.div`
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
+
+    @media (max-width: 425px) {
+      font-size: 1.2rem;
+    }
 
     @media (min-width: 992px) {
       font-size: 2.2rem;
