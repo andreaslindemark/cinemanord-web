@@ -2,11 +2,8 @@ import styled from 'styled-components';
 
 export const StyledHamburger = styled.div`
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 8px 10px;
-  border-radius: 25px;
-  right: 30px;
-  top: 25px;
+  right: 25px;
+  top: 34px;
   z-index: 200;
   cursor: pointer;
   transition: all 0.3s;

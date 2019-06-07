@@ -46,39 +46,28 @@ export const MovieImageTextWrapper = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow-wrap: break-word;
 
   .pWrapper {
-    background: rgb(0, 0, 0, 0.5);
-    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 20px;
     margin: 0 20px;
     border-radius: 20px;
   }
 `;
 
 export const MovieImageText = styled.p`
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   letter-spacing: 1.5px;
-  font-size: 1.2rem !important;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: 800;
   margin: 0px;
   padding: 0px;
   color: #fff;
 
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-
-  @media (max-width: 425px) {
-    font-size: 0.8rem !important;
-    line-height: 20px !important;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 1rem;
-  }
-
-  @media (min-width: 992px) {
-    font-size: 1rem !important;
-  }
-
   @media (min-width: 1200px) {
-    font-size: 1.1rem !important;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 `;

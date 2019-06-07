@@ -13,49 +13,70 @@ export const StyledLightBox = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: auto;
 
   @media (max-width: 1024px) {
     justify-content: start;
   }
 
   .text-wrapper {
-    width: 80vw;
-    background: #000;
-    padding: 40px;
+    margin-top: 20px;
+    width: 90vw;
+    height: calc(90vw / 16 * 9);
+
+    @media (min-width: 425px) {
+      margin-top: 0;
+    }
+
+    @media (min-width: 992px) {
+      width: 50vw;
+      height: calc(50vw / 16 * 9);
+    }
+
+    @media (min-width: 1024px) {
+      width: 80vw;
+      height: calc(80vw / 16 * 9);
+    }
+
+    @media (min-width: 1440px) {
+      width: 60vw;
+      height: calc(60vw / 16 * 9);
+    }
 
     p,
     em,
     strong {
       color: #fff;
-    }
 
-    @media (max-width: 425px) {
-      width: 100vw;
-      height: calc(50vw / 16 * 9);
-
-      p,
-      em,
-      strong {
+      @media (max-width: 425px) {
         font-size: 0.8rem;
         line-height: 16px;
       }
-    }
-
-    @media (min-width: 992px) {
-      width: 50vw;
-      height: calc(50vw / 16 * 9);
     }
   }
 
   .player-wrapper {
     position: relative;
-    width: 80vw;
-    height: calc(80vw / 16 * 9);
-    margin: 0 0 40px 0;
+    width: 90vw;
+    height: calc(90vw / 16 * 9);
+
+    @media (min-width: 425px) {
+      margin: 0 0 40px 0;
+    }
 
     @media (min-width: 992px) {
       width: 50vw;
       height: calc(50vw / 16 * 9);
+    }
+
+    @media (min-width: 1024px) {
+      width: 80vw;
+      height: calc(80vw / 16 * 9);
+    }
+
+    @media (min-width: 1440px) {
+      width: 60vw;
+      height: calc(60vw / 16 * 9);
     }
 
     :after {
@@ -79,13 +100,17 @@ export const StyledLightBox = styled.div`
     -webkit-text-fill-color: transparent;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 
-    @media (max-width: 425px) {
-      font-size: 1.2rem;
+    @media (min-width: 425px) {
+      font-size: 1.3rem;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
+      font-size: 1.8rem;
+    }
+
+    @media (min-width: 1440px) {
       font-size: 2.2rem;
     }
   }
