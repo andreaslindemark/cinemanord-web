@@ -9,8 +9,8 @@ import { GlobalStyle } from '../components/styles/StyledLayout';
 
 const IndexPage = () => (
   <>
-    {/* <form
-      name="cinema-form"
+    <form
+      name="cinemacontact"
       method="post"
       action="/"
       data-netlify="true"
@@ -18,11 +18,10 @@ const IndexPage = () => (
       hidden
     >
       <input hidden className="hidden" name="bot-field" />
-      <input type="text" name="cinema-name" placeholder="First and Last name" />
-      <input type="email" name="cinema-email" placeholder="Email" />
-      <textarea name="cinema-message" placeholder="Message" />
-      <button type="submit">Send Message</button>
-    </form> */}
+      <input type="text" name="name" placeholder="First and Last name" />
+      <input type="email" name="email" placeholder="Email" />
+      <textarea name="message" placeholder="Message" />
+    </form>
     <SEO title="Home" keywords={[`cinemanord`, `video`, `movies`]} />
     <HomeHero />
     <HomeLayout>

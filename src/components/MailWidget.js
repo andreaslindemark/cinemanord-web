@@ -33,11 +33,7 @@ const MailWidget = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
-    if (
-      formState['cinema-name'] &&
-      formState['cinema-email'] &&
-      formState['cinema-message']
-    ) {
+    if (formState.name && formState.email && formState.message) {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -53,6 +49,7 @@ const MailWidget = () => {
   };
 
   const handleChange = e => {
+    console.log(formState);
     const event = e.target;
     setFormState(prev => ({ ...prev, [event.name]: event.value }));
   };
@@ -78,21 +75,21 @@ const MailWidget = () => {
       <div className="contentMailWidget">
         {!formSent ? (
           <form
-            name="cinema-contact"
+            name="cinemacontact"
             method="post"
             action="/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
           >
-            <input type="hidden" name="form-name" value="cinema-contact" />
+            <input type="hidden" name="form-name" value="cinemacontact" />
             <p hidden>
               Don’t fill this out: <CnInput name="bot-field" />
             </p>
             <p>
               <CnInput
                 type="text"
-                name="cinema-name"
+                name="name"
                 onChange={handleChange}
                 placeholder="First and Last Name"
               />
@@ -100,14 +97,14 @@ const MailWidget = () => {
             <p>
               <CnInput
                 type="email"
-                name="cinema-email"
+                name="email"
                 onChange={handleChange}
                 placeholder="E-mail Adress"
               />
             </p>
             <p>
               <CnTextArea
-                name="cinema-message"
+                name="message"
                 onChange={handleChange}
                 placeholder="Your Message"
               />
