@@ -72,53 +72,60 @@ const MailWidget = () => {
         />
       </div>
       <div className="contentMailWidget">
-        <form name="contact-form" method="post" data-netlify="true">
-          <input type="text" placeholder="name" name="name" />
-          <button>Send</button>
-        </form>
         {!formSent ? (
           <form
-            name="cinema-contact"
+            name="cinema-form"
             method="post"
-            action="/"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
+            netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="cinema-contact" />
-            <p hidden>
-              Don’t fill this out: <CnInput name="bot-field" />
-            </p>
-            <p>
-              <CnInput
-                type="text"
-                name="cinema-name"
-                onChange={handleChange}
-                placeholder="First and Last Name"
-              />
-            </p>
-            <p>
-              <CnInput
-                type="email"
-                name="cinema-email"
-                onChange={handleChange}
-                placeholder="E-mail Adress"
-              />
-            </p>
-            <p>
-              <CnTextArea
-                name="cinema-message"
-                onChange={handleChange}
-                placeholder="Your Message"
-              />
-            </p>
-            <p>
-              <CnSubmit nightMode={nightMode} type="submit">
-                Send email
-              </CnSubmit>
-            </p>
+            <input hidden className="hidden" name="bot-field" />
+            <input type="text" placeholder="name" name="name" />
+            <div data-netlify-recaptcha />
+            <button>Send</button>
           </form>
         ) : (
+          // <form
+          //   name="cinema-contact"
+          //   method="post"
+          //   action="/"
+          //   data-netlify="true"
+          //   data-netlify-honeypot="bot-field"
+          //   onSubmit={handleSubmit}
+          // >
+          //   <input type="hidden" name="form-name" value="cinema-contact" />
+          //   <p hidden>
+          //     Don’t fill this out: <CnInput name="bot-field" />
+          //   </p>
+          //   <p>
+          //     <CnInput
+          //       type="text"
+          //       name="cinema-name"
+          //       onChange={handleChange}
+          //       placeholder="First and Last Name"
+          //     />
+          //   </p>
+          //   <p>
+          //     <CnInput
+          //       type="email"
+          //       name="cinema-email"
+          //       onChange={handleChange}
+          //       placeholder="E-mail Adress"
+          //     />
+          //   </p>
+          //   <p>
+          //     <CnTextArea
+          //       name="cinema-message"
+          //       onChange={handleChange}
+          //       placeholder="Your Message"
+          //     />
+          //   </p>
+          //   <p>
+          //     <CnSubmit nightMode={nightMode} type="submit">
+          //       Send email
+          //     </CnSubmit>
+          //   </p>
+          // </form>
           <p>Thank you for emailing us.</p>
         )}
       </div>
