@@ -29,6 +29,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* Need to have below check for the flickering in white on transition because of default color white on body */
   transition: ${props => (props.nightMode ? 'none' : 'all 0.5s')};
+
+  a {
+    color: ${props => (props.nightMode ? '#fff' : '#222')};
+  }
 }
 article,
 aside,
@@ -220,17 +224,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-}
+
 img {
   max-width: 100%;
   margin-left: 0;
