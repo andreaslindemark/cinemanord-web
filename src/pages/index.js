@@ -9,7 +9,7 @@ import { GlobalStyle } from '../components/styles/StyledLayout';
 
 const IndexPage = () => (
   <>
-    <form
+    {/* <form
       name="cinema-form"
       method="post"
       action="/"
@@ -22,7 +22,7 @@ const IndexPage = () => (
       <input type="email" name="cinema-email" placeholder="Email" />
       <textarea name="cinema-message" placeholder="Message" />
       <button type="submit">Send Message</button>
-    </form>
+    </form> */}
     <SEO title="Home" keywords={[`cinemanord`, `video`, `movies`]} />
     <HomeHero />
     <HomeLayout>
