@@ -109,7 +109,7 @@ const MailWidget = () => {
             </p>
             <p>
               <CnSubmit nightMode={nightMode} type="submit">
-                Send email
+                Skicka meddelande
               </CnSubmit>
             </p>
           </form>

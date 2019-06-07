@@ -1,17 +1,17 @@
 import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
-import { ThemeContext } from './ThemeWrapper';
+// import { ThemeContext } from './ThemeWrapper';
 
 import Header from './header';
 import OverlayMenu from './OverlayMenu';
 import Hamburger from './Hamburger';
 import Social from './Social';
 
-import { GlobalStyle } from './styles/StyledLayout';
+// import { GlobalStyle } from './styles/StyledLayout';
 
 const Layout = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [nightMode] = useContext(ThemeContext);
+  // const [nightMode] = useContext(ThemeContext);
 
   const handleOverlayMenu = () => {
     setMenuOpen(!menuOpen);
@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
         </main>
       </div>
       <Social />
-      <GlobalStyle nightMode={nightMode} />
+      {/* <GlobalStyle nightMode={nightMode} /> */}
     </>
   );
 };

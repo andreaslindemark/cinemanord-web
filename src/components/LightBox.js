@@ -12,6 +12,7 @@ const LightBox = ({ show, link, title, content, callback }) => (
         width="100%"
         height="100%"
         controls={false}
+        light={false}
         playsinline
       />
     </div>
