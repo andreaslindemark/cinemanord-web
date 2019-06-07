@@ -5,7 +5,6 @@ import { ThemeContext } from './ThemeWrapper';
 import PageMenu from './PageMenu';
 
 import cnLogo from '../images/cn-logo.png';
-import cnLogoBlack from '../images/cn-logo-black.png';
 
 import { StyledHeader } from './styles/StyledHeader';
 
@@ -25,7 +24,7 @@ const Header = () => {
                   textDecoration: `none`,
                 }}
               >
-                <img src={nightMode ? cnLogo : cnLogoBlack} alt="cnLogo" />
+                <img className="cnLogo" src={cnLogo} alt="cnLogo" />
               </Link>
             </h1>
             <PageMenu />

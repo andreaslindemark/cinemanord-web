@@ -33,6 +33,10 @@ body {
   a {
     color: ${props => (props.nightMode ? '#fff' : '#222')};
   }
+
+  .cnLogo {
+    filter: ${props => (props.nightMode ? 'invert(0%)' : 'invert(100%)')};
+  }
 }
 article,
 aside,
