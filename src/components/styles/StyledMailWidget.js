@@ -30,8 +30,8 @@ export const StyledMailWidget = styled.div`
     cursor: pointer;
     transition: all 0.5s;
     outline: none;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
     background: #307853; /* Old browsers */
     background: -moz-linear-gradient(
@@ -47,8 +47,8 @@ export const StyledMailWidget = styled.div`
     background: linear-gradient(to bottom, #307853 0%, #6ed4bc 100%);
 
     @media (max-width: 768px) {
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
     }
   }
 
@@ -57,7 +57,7 @@ export const StyledMailWidget = styled.div`
   }
 
   .mailWidgetImg {
-    width: 30px;
+    width: 25px;
     height: auto;
     margin-top: 25px;
 
@@ -83,7 +83,7 @@ export const StyledMailWidget = styled.div`
 
   .contentMailWidget {
     position: relative;
-    top: 70px;
+    top: 50px;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 480px;
@@ -103,8 +103,8 @@ export const StyledMailWidget = styled.div`
 `;
 
 export const CnInput = styled.input`
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
+  font-weight: 800;
   background: #fff;
   border-radius: 20px;
   width: 100%;
@@ -129,14 +129,14 @@ export const CnInput = styled.input`
 `;
 
 export const CnTextArea = styled.textarea`
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
+  font-weight: 800;
   background: #fff;
   border-radius: 20px;
   width: 100%;
   height: 150px;
   color: #000;
-  padding: 20px;
+  padding: 10px 20px;
   margin-bottom: 20px;
   outline: none;
 
