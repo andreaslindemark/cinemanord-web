@@ -9,7 +9,7 @@ import Layout from '../components/layout';
 const PageTemplate = ({ data }) => (
   <Layout>
     <div className="container">
-      <div className="row" style={{ marginBottom: '40px' }}>
+      <div className="row" style={{ maxWidth: '800px', margin: '40px auto' }}>
         <PageContent className="col">
           {data.currentPage.featured_media ? (
             <Img

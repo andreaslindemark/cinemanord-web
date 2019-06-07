@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import useHomeMenu from '../hooks/useHomeMenu';
 
+import useHomeMenu from '../hooks/useHomeMenu';
 import { StyledMenu } from './styles/StyledHomeMenu';
 
 const HomeMenu = () => {

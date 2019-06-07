@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { HomeLayoutWrapper } from './styles/StyledHomeLayout';
 
 import OverlayMenu from './OverlayMenu';
 import Hamburger from './Hamburger';
-
 import cnLogo from '../images/cn-logo.png';
+import { HomeLayoutWrapper } from './styles/StyledHomeLayout';
 
 const HomeLayout = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false);
