@@ -74,83 +74,47 @@ const MailWidget = () => {
       <div className="contentMailWidget">
         {!formSent ? (
           <form
-            name="cinema-form"
+            name="cinema-contact"
             method="post"
             action="/"
             data-netlify="true"
-            netlify-honeypot="bot-field"
+            data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
           >
-            <input hidden className="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="cinema-contact" />
+            <p hidden>
+              Don’t fill this out: <CnInput name="bot-field" />
+            </p>
             <p>
-              <input
+              <CnInput
                 type="text"
                 name="cinema-name"
                 onChange={handleChange}
-                placeholder="First and Last name"
+                placeholder="First and Last Name"
               />
             </p>
             <p>
-              <input
+              <CnInput
                 type="email"
                 name="cinema-email"
                 onChange={handleChange}
-                placeholder="Email"
+                placeholder="E-mail Adress"
               />
             </p>
             <p>
-              <textarea
+              <CnTextArea
                 name="cinema-message"
                 onChange={handleChange}
-                placeholder="Message"
+                placeholder="Your Message"
               />
             </p>
             <p>
-              <button type="submit">Send Message</button>
+              <CnSubmit nightMode={nightMode} type="submit">
+                Send email
+              </CnSubmit>
             </p>
           </form>
         ) : (
-          // <form
-          //   name="cinema-contact"
-          //   method="post"
-          //   action="/"
-          //   data-netlify="true"
-          //   data-netlify-honeypot="bot-field"
-          //   onSubmit={handleSubmit}
-          // >
-          //   <input type="hidden" name="form-name" value="cinema-contact" />
-          //   <p hidden>
-          //     Don’t fill this out: <CnInput name="bot-field" />
-          //   </p>
-          //   <p>
-          //     <CnInput
-          //       type="text"
-          //       name="cinema-name"
-          //       onChange={handleChange}
-          //       placeholder="First and Last Name"
-          //     />
-          //   </p>
-          //   <p>
-          //     <CnInput
-          //       type="email"
-          //       name="cinema-email"
-          //       onChange={handleChange}
-          //       placeholder="E-mail Adress"
-          //     />
-          //   </p>
-          //   <p>
-          //     <CnTextArea
-          //       name="cinema-message"
-          //       onChange={handleChange}
-          //       placeholder="Your Message"
-          //     />
-          //   </p>
-          //   <p>
-          //     <CnSubmit nightMode={nightMode} type="submit">
-          //       Send email
-          //     </CnSubmit>
-          //   </p>
-          // </form>
           <p>Thank you for emailing us.</p>
         )}
       </div>
