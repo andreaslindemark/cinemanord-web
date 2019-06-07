@@ -87,8 +87,7 @@ const MailWidget = () => {
           >
             <input type="hidden" name="form-name" value="cinema-contact" />
             <p hidden>
-              Don’t fill this out:{' '}
-              <CnInput name="bot-field" onChange={handleChange} />
+              Don’t fill this out: <CnInput name="bot-field" />
             </p>
             <p>
               <CnInput
