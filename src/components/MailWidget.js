@@ -81,7 +81,7 @@ const MailWidget = () => {
             data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
           >
-            <input type="hidden" name="form-name" value="cinema-contact" />
+          
             <p hidden>
               Don’t fill this out:{' '}
               <CnInput name="bot-field" onChange={handleChange} />
