@@ -22,7 +22,7 @@ export const StyledMailWidget = styled.div`
 
   .toggleButton {
     position: absolute;
-    right: 40px;
+    right: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -104,19 +104,21 @@ export const StyledMailWidget = styled.div`
 
 export const CnInput = styled.input`
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background: #fff;
   border-radius: 20px;
   width: 100%;
   height: 40px;
   color: #000;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
   outline: none;
   border: none;
 
   ::placeholder {
-    color: grey;
+    color: #444;
+    font-weight: 800;
+    font-size: 0.8rem;
   }
 
   @media (max-width: 425px) {
@@ -128,18 +130,20 @@ export const CnInput = styled.input`
 
 export const CnTextArea = styled.textarea`
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background: #fff;
   border-radius: 20px;
   width: 100%;
   height: 150px;
   color: #000;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
   outline: none;
 
   ::placeholder {
-    color: grey;
+    color: #444;
+    font-weight: 800;
+    font-size: 0.8rem;
   }
 
   @media (max-width: 425px) {
@@ -150,12 +154,12 @@ export const CnTextArea = styled.textarea`
 
 export const CnSubmit = styled.button`
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 800;
   border-radius: 50px;
   border: 0;
   width: 100%;
-  height: 60px;
+  height: 50px;
   color: #fff;
   font-weight: 800;
   padding: 10px;

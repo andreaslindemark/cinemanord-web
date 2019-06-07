@@ -33,7 +33,11 @@ const MailWidget = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
-    if (formState.name && formState.email && formState.message) {
+    if (
+      formState['cinema-name'] &&
+      formState['cinema-email'] &&
+      formState['cinema-message']
+    ) {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },

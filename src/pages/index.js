@@ -18,22 +18,10 @@ const IndexPage = () => (
       hidden
     >
       <input hidden className="hidden" name="bot-field" />
-      <p>
-        <input
-          type="text"
-          name="cinema-name"
-          placeholder="First and Last name"
-        />
-      </p>
-      <p>
-        <input type="email" name="cinema-email" placeholder="Email" />
-      </p>
-      <p>
-        <textarea name="cinema-message" placeholder="Message" />
-      </p>
-      <p>
-        <button type="submit">Send Message</button>
-      </p>
+      <input type="text" name="cinema-name" placeholder="First and Last name" />
+      <input type="email" name="cinema-email" placeholder="Email" />
+      <textarea name="cinema-message" placeholder="Message" />
+      <button type="submit">Send Message</button>
     </form>
     <SEO title="Home" keywords={[`cinemanord`, `video`, `movies`]} />
     <HomeHero />
