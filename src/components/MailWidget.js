@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import { navigateTo } from 'gatsby-link';
 
 import envelope from '../images/envelope.svg';
 import x from '../images/x.png';
@@ -42,7 +41,6 @@ const MailWidget = () => {
           ...formState,
         }),
       })
-        // .then(() => navigateTo(form.getAttribute('action')))
         .then(setFormSent(true))
         .catch(error => alert(error));
     }
@@ -91,7 +89,7 @@ const MailWidget = () => {
                 type="text"
                 name="name"
                 onChange={handleChange}
-                placeholder="First and Last Name"
+                placeholder="För- och efternamn"
               />
             </p>
             <p>
@@ -99,14 +97,14 @@ const MailWidget = () => {
                 type="email"
                 name="email"
                 onChange={handleChange}
-                placeholder="E-mail Adress"
+                placeholder="Epost"
               />
             </p>
             <p>
               <CnTextArea
                 name="message"
                 onChange={handleChange}
-                placeholder="Your Message"
+                placeholder="Meddelande"
               />
             </p>
             <p>
@@ -116,7 +114,10 @@ const MailWidget = () => {
             </p>
           </form>
         ) : (
-          <p>Thank you for emailing us.</p>
+          <p>
+            Tack för att du kontaktar Cinemanord. Vi återkommer så fort vi bara
+            kan ...
+          </p>
         )}
       </div>
     </StyledMailWidget>
