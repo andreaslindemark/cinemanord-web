@@ -76,13 +76,38 @@ const MailWidget = () => {
           <form
             name="cinema-form"
             method="post"
+            action="/"
             data-netlify="true"
             netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
           >
             <input hidden className="hidden" name="bot-field" />
-            <input type="text" placeholder="name" name="name" />
-            <div data-netlify-recaptcha />
-            <button>Send</button>
+            <p>
+              <input
+                type="text"
+                name="cinema-name"
+                onChange={handleChange}
+                placeholder="First and Last name"
+              />
+            </p>
+            <p>
+              <input
+                type="email"
+                name="cinema-email"
+                onChange={handleChange}
+                placeholder="Email"
+              />
+            </p>
+            <p>
+              <textarea
+                name="cinema-message"
+                onChange={handleChange}
+                placeholder="Message"
+              />
+            </p>
+            <p>
+              <button type="submit">Send Message</button>
+            </p>
           </form>
         ) : (
           // <form
