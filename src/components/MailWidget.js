@@ -74,14 +74,14 @@ const MailWidget = () => {
       <div className="contentMailWidget">
         {!formSent ? (
           <form
-            name="contact"
+            name="cinema-contact"
             method="post"
             action="/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="cinema-contact" />
             <p hidden>
               Don’t fill this out:{' '}
               <CnInput name="bot-field" onChange={handleChange} />
@@ -89,7 +89,7 @@ const MailWidget = () => {
             <p>
               <CnInput
                 type="text"
-                name="name"
+                name="cinema-name"
                 onChange={handleChange}
                 placeholder="First and Last Name"
               />
@@ -97,14 +97,14 @@ const MailWidget = () => {
             <p>
               <CnInput
                 type="email"
-                name="email"
+                name="cinema-email"
                 onChange={handleChange}
                 placeholder="E-mail Adress"
               />
             </p>
             <p>
               <CnTextArea
-                name="message"
+                name="cinema-message"
                 onChange={handleChange}
                 placeholder="Your Message"
               />
