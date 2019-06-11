@@ -5,6 +5,7 @@ import Facebook from '../images/ca-fb.svg';
 import LinkedIn from '../images/ca-linkedin.svg';
 import Instagram from '../images/cn-insta.svg';
 import Twitter from '../images/cn-twitter.svg';
+import Youtube from '../images/cn-youtube.svg';
 
 import { StyledSocial, StyledIcons } from './styles/StyledSocial';
 
@@ -22,6 +23,9 @@ const Social = () => (
       </a>
       <a href="https://www.instagram.com/andreas_lindemark_cinemanord/?hl=sv">
         <img src={Instagram} alt="cn-instagram" />
+      </a>
+      <a href="https://www.youtube.com/c/AndreasLindemark">
+        <img src={Youtube} alt="cn-youtube" />
       </a>
     </StyledIcons>
     <div className="modeButton">
