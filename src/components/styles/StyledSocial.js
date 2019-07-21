@@ -37,7 +37,6 @@ export const StyledIcons = styled.div`
   }
   img {
     max-width: 30px;
-
   }
 
   @media (max-width: 425px) {
