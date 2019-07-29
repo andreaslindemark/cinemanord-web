@@ -48,26 +48,26 @@ module.exports = {
     },
     'gatsby-plugin-styled-components',
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
             family: 'Quicksand',
             variants: ['200', '400', '500', '600', '700'],
           },
-          // {
-          //   family: 'Glegoo',
-          //   variants: ['200', '400', '500', '600', '700'],
-          // },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`],
+          },
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-57605980-1',
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-57605980-1',
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
