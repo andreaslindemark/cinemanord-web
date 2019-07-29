@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const ThemeContext = React.createContext(true);
+export const ThemeContext = React.createContext([]);
 
 const ThemeWrapper = ({ children }) => {
   const [nightMode, setNightMode] = useState(true);
