@@ -19,7 +19,7 @@ const OverlayMenu = ({ menuOpen, callback }) => {
         <ul className="overlayMenu">
           {menu.items.map(item => (
             <li key={item.wordpress_id}>
-              <Link to={item.url} activeClassName="overlayActive">
+              <Link to={`/${item.object_slug}`} activeClassName="overlayActive">
                 {item.title}
               </Link>
             </li>

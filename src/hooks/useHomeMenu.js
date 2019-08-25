@@ -17,6 +17,7 @@ const useHomeMenu = () => {
               wordpress_id
               title
               url
+              object_slug
             }
           }
         }

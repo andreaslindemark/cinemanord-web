@@ -40,10 +40,19 @@ module.exports = {
         protocol: 'http',
         hostingWPCOM: false,
         useACF: true,
-        searchAndReplaceContentUrls: {
-          sourceUrl: 'https://dev.cinemanord.com/',
-          replacementUrl: '',
-        },
+        // searchAndReplaceContentUrls: {
+        //   sourceUrl: 'https://dev.cinemanord.com/',
+        //   replacementUrl: '',
+        // },
+        // plugins: [
+        //   {
+        //     resolve: `gatsby-wordpress-inline-images`,
+        //     options: {
+        //       baseUrl: `https://dev.cinemanord.com/`,
+        //       protocol: `https`,
+        //     },
+        //   },
+        // ],
       },
     },
     'gatsby-plugin-styled-components',

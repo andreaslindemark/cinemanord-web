@@ -15,6 +15,7 @@ exports.createPages = async ({ graphql, actions }) => {
             id
             status
             link
+            slug
           }
         }
       }
@@ -32,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
   allWordpressPage.edges.forEach(edge => {
     if (edge.node.status === 'publish') {
       createPage({
-        path: edge.node.link,
+        path: edge.node.slug,
         component: slash(pageTemplate),
         context: {
           id: edge.node.id,

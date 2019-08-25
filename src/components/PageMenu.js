@@ -16,7 +16,7 @@ const PageMenu = () => {
           <li key={item.wordpress_id}>
             <Link
               data-hover={item.title}
-              to={item.url}
+              to={`/${item.object_slug}`}
               activeClassName="active-menu"
             >
               {item.title}

@@ -23,6 +23,7 @@
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-source-wordpress": "^3.0.58",
     "gatsby-transformer-sharp": "^2.1.19",
+    "gatsby-wordpress-inline-images": "^1.0.0",
     "intersection-observer": "^0.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

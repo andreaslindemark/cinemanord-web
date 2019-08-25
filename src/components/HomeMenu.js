@@ -12,7 +12,7 @@ const HomeMenu = () => {
       <ul id="cinemanord-ul">
         {menu.items.map(item => (
           <li key={item.wordpress_id}>
-            <Link data-hover={item.title} to={item.url}>
+            <Link data-hover={item.title} to={`/${item.object_slug}`}>
               {item.title}
             </Link>
           </li>
